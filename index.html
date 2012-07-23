@@ -7,49 +7,249 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-
+    
     <!-- Use the .htaccess and remove these lines to avoid edge case issues.
          More info: h5bp.com/i/378 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <!-- Site Information:
+       * Bootstrap v2.0.4 http://twitter.github.com/bootstrap
+       * HTML5 Boilerplate v3.0.2 http://html5boilerplate.com
+       * jQuery v1.7.2 http://jquery.com
+       * Modernizr v2.6.1 http://modernizr.com
+       *
+       * H5BP: More ideas for your <head> here: http://html5boilerplate.com/docs/html-head/
+    ============================================================================= -->
 
-    <title></title>
-    <meta name="description" content="">
+    <title>Shopify BigCommerce</title>
+    <meta name="description" content="Shopify BigCommerce - The definitive eCommerce Software showdown.">
+    <meta name="author" content="Chris Jacob">
+    
+    <!-- Open graph protocol:
+       * Used by Facebook, Google+, Search Engines and others
+       * The Open Graph protocol documentation http://ogp.me/
+       * Facebook's Built-in Object Types https://developers.facebook.com/docs/opengraph/objects/builtin/
+       * Facebook's official parser and debugger https://developers.facebook.com/tools/debug
+    ============================================================================= -->
+    <meta property="fb:admins" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:locality" content="">
+    <meta property="og:region" content="">
+    <meta property="og:country-name" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title"  content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Device and Spider Meta data:
+       * Mobile viewport optimized: http://h5bp.com/viewport
+       * Viewport initial-scale=1.0 added for Bootstrap: http://twitter.github.com/bootstrap/scaffolding.html#responsive
+    ============================================================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="canonical" href=""> -->
+    <meta name="robots" content="index,follow">
 
-    <!-- Mobile viewport optimized: h5bp.com/viewport -->
-    <meta name="viewport" content="width=device-width">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
+    <!-- Touch icons and favicon.ico:
+       * Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
+    ============================================================================= -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Stylesheets:
+    ============================================================================= -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/chosen.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
-    <!-- All JavaScript at the bottom, except this Modernizr build.
-         Modernizr enables HTML5 elements & feature detects for optimal performance.
-         Create your own custom Modernizr build: www.modernizr.com/download/ -->
+    <!-- JavaScript in HEAD:
+       * All JavaScript at the bottom, except this Modernizr build.
+       * Modernizr enables HTML5 elements & feature detects for optimal performance.
+       * Create your own custom Modernizr build: http://www.modernizr.com/download
+    ============================================================================= -->
     <script src="js/vendor/modernizr-2.6.1.min.js"></script>
 </head>
 <body>
-    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-         chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!-- Browser Support Notice
+       * Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       * chromium.org/developers/how-tos/chrome-frame-getting-started
+    ============================================================================= -->
     <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-    <!-- Add your site or application content here -->
-	hello world
 
-    <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+    <!-- Navbar
+       * http://twitter.github.com/bootstrap/components.html#navbar
+    ============================================================================= -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="pull-left">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                </div>
+                <div class="pull-right">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="control-group">
+                                <div class="controls">                                   
+                                    <select class="chosen-select" data-placeholder="eCommerce Software">
+                                        <option value=""></option>
+                                        <optgroup label="Shopify vs">
+                                            <option>BigCommerce</option>
+                                            <option>Volusion</option>
+                                            <option>AShop</option>
+                                            <option>Other</option>
+                                        </optgroup>
+                                        <optgroup label="BigCommerce vs">
+                                            <option>Shopify</option>
+                                            <option>Volusion</option>
+                                            <option>AShop</option>
+                                            <option>Other</option>
+                                        </optgroup>
+                                        <optgroup label="Volusion vs">
+                                            <option>Shopify</option>
+                                            <option>BigCommerce</option>
+                                            <option>AShop</option>
+                                            <option>Other</option>
+                                        </optgroup>
+                                        <optgroup label="AShop vs">
+                                            <option>Shopify</option>
+                                            <option>Volusion</option>
+                                            <option>BigCommerce</option>
+                                            <option>Other</option>
+                                        </optgroup>  
+                                        <optgroup label="Other vs">
+                                            <option>Shopify</option>
+                                            <option>Volusion</option>
+                                            <option>BigCommerce</option>
+                                            <option>AShop</option>
+                                        </optgroup>
+                                        <optgroup label="Web Hosting...">
+                                            <option>Blue Host</option>
+                                            <option>GoDaddy</option>
+                                            <option>Hostgator</option>
+                                            <option>BigHost</option>
+                                            <option>Uber Host 9000 Here</option>
+                                        </optgroup>
+                                        <optgroup label="Word Press Themes...">
+                                            <option>Theme 1</option>
+                                            <option>Theme 2</option>
+                                            <option>Theme 3</option>
+                                            <option>Theme 4</option>
+                                            <option>Theme 5</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="nav-collapse">
+                    <ul class="nav pull-left">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-home icon-white"></i></a>
+                        </li>
+                        <li class="divider-vertical"></li>                    
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Introduction</a></li>
+                                <li><a href="#">First Impressions</a></li>
+                                <li><a href="#">Admin Features</a></li>
+                                <li><a href="#">Customer Features</a></li>
+                                <li><a href="#">Themes, Apps &amp; Plugins</a></li>
+                                <li><a href="#">Community &amp; Support</a></li>                                                                                                                        
+                                <li><a href="#">Conclusion</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Screenshots</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Admin Features</a></li>
+                                <li><a href="#">Customer Features</a></li>
+                                <li><a href="#">Themes, Apps &amp; Plugins</a></li>
+                                <li><a href="#">Community &amp; Support</a></li>                                                                                                                        
+                            </ul>
+                        </li>       
+                        <li class="divider-vertical"></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Admin Features</a></li>
+                                <li><a href="#">Customer Features</a></li>
+                                <li><a href="#">Themes, Apps &amp; Plugins</a></li>
+                                <li><a href="#">Community &amp; Support</a></li>                                                                                                                        
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Themes, Apps &amp; Plugins</a></li>
+                                <li><a href="#">Popularity</a></li>                                                                                                                      
+                            </ul>
+                        </li>       
+                        <li class="divider-vertical"></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opinions</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Your Shopify Story</a></li>
+                                <li><a href="#">Your BigCommerce Story</a></li> 
+                                <li><a href="#">Who Wins?</a></li>
+                                <li><a href="#">Comments</a></li>                                                                                                                                                                                     
+                            </ul>
+                        </li>                                                                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+
+
+    <!-- JavaScript in BODY:
+       * JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom
+       * Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
+    ============================================================================= -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 
     <!-- scripts concatenated and minified via build script -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/chosen.jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <!-- end scripts -->
 
-    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-         mathiasbynens.be/notes/async-analytics-snippet -->
+    <!-- Google Analytics:
+       * Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       * mathiasbynens.be/notes/async-analytics-snippet
+    ============================================================================= -->
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
