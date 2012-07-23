@@ -503,6 +503,15 @@ body {
 	}
 }
 
+/* Phones to tablets */
+@media (max-width: 979px) {
+	.navbar .dropdown-toggle-caret {
+		display: none;
+	}
+}
+
+
+
 /* DEFAULT STYLE HERE */
 
 /* Large desktop */
