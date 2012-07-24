@@ -487,12 +487,17 @@ body {
 	}
 }
 
-/* Landscape phone to portrait tablet */
+/* Portrait SMALL tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: #ddd;
+        background-color: orange;
+    }
+}
+
+/* Landscape phone to portrait SMALL tablet */
 @media (max-width: 767px) {
-	body {
-		background-color: #ddd;
-		background-color: orange;
-	}
+
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -511,8 +516,7 @@ body {
 }
 
 
-
-/* DEFAULT STYLE HERE */
+/* DEFAULT STYLE HERE - min-width: 980px */
 
 /* Large desktop */
 @media (min-width: 1200px) {
