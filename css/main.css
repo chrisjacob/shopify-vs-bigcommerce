@@ -440,6 +440,7 @@ td {
    ========================================================================== */
 
 body {
+    padding-top: 90px;
 	background-color: #ccc;
 	background-color: green;
 }
@@ -467,7 +468,11 @@ body {
 
 
 
-
+.navbar .btn-navbar {
+    float: left;
+    text-shadow: none;
+    color: white;
+}
 
 
 
@@ -497,7 +502,9 @@ body {
 
 /* Landscape phone to portrait SMALL tablet */
 @media (max-width: 767px) {
-
+    body {
+        padding-top: 0px;
+    }
 }
 
 /* Portrait tablet to landscape and desktop */

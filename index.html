@@ -63,7 +63,7 @@
     <!-- Stylesheets:
     ============================================================================= -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
     <link rel="stylesheet" href="css/chosen.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -85,74 +85,95 @@
     <!-- Navbar
        * http://twitter.github.com/bootstrap/components.html#navbar
     ============================================================================= -->
+<!--     <div id="mobile-menu" class="hidden-desktop">
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <a class="btn btn-inverse" href="#menu" data-toggle="collapse" data-target=".nav-collapse"><i class="icon-align-justify icon-white"></i></a>
+                <a class="btn btn-inverse" href="#this" data-toggle="tab">Shopify</a>
+                <a class="btn btn-inverse" href="#vs" data-toggle="tab">vs</a>
+                <a class="btn btn-inverse" href="#that" data-toggle="tab">BigCommerce</a>
+            </div>
+        </div>
+    </div> -->
+
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <div class="pull-left">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <div id="mobile-menu" class="hidden-desktop">
+                    <a href="#menu" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
+                    <a href="#this" class="btn btn-navbar" data-toggle="tab">
+                        Shopify
+                    </a>
+                    <a href="#vs" class="btn btn-navbar" data-toggle="tab">
+                        vs
+                    </a>
+                    <a href="#that" class="btn btn-navbar" data-toggle="tab">
+                        BigCommerce
+                    </a>
                 </div>
-                <div class="pull-right">
-                    <form class="form-horizontal">
-                        <fieldset>
-                            <div class="control-group">
-                                <div class="controls">                                   
-                                    <select class="chosen-select" data-placeholder="eCommerce Software">
-                                        <option value=""></option>
-                                        <optgroup label="Shopify vs">
-                                            <option>BigCommerce</option>
-                                            <option>Volusion</option>
-                                            <option>AShop</option>
-                                            <option>Other</option>
-                                        </optgroup>
-                                        <optgroup label="BigCommerce vs">
-                                            <option>Shopify</option>
-                                            <option>Volusion</option>
-                                            <option>AShop</option>
-                                            <option>Other</option>
-                                        </optgroup>
-                                        <optgroup label="Volusion vs">
-                                            <option>Shopify</option>
-                                            <option>BigCommerce</option>
-                                            <option>AShop</option>
-                                            <option>Other</option>
-                                        </optgroup>
-                                        <optgroup label="AShop vs">
-                                            <option>Shopify</option>
-                                            <option>Volusion</option>
-                                            <option>BigCommerce</option>
-                                            <option>Other</option>
-                                        </optgroup>  
-                                        <optgroup label="Other vs">
-                                            <option>Shopify</option>
-                                            <option>Volusion</option>
-                                            <option>BigCommerce</option>
-                                            <option>AShop</option>
-                                        </optgroup>
-                                        <optgroup label="Web Hosting...">
-                                            <option>Blue Host</option>
-                                            <option>GoDaddy</option>
-                                            <option>Hostgator</option>
-                                            <option>BigHost</option>
-                                            <option>Uber Host 9000 Here</option>
-                                        </optgroup>
-                                        <optgroup label="Word Press Themes...">
-                                            <option>Theme 1</option>
-                                            <option>Theme 2</option>
-                                            <option>Theme 3</option>
-                                            <option>Theme 4</option>
-                                            <option>Theme 5</option>
-                                        </optgroup>
-                                    </select>
+                <div id="menu" class="nav-collapse">
+                    <div class="pull-right">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <div class="control-group">
+                                    <div class="controls">                                   
+                                        <select class="chosen-select" data-placeholder="eCommerce Software">
+                                            <option value=""></option>
+                                            <optgroup label="Shopify vs">
+                                                <option>BigCommerce</option>
+                                                <option>Volusion</option>
+                                                <option>AShop</option>
+                                                <option>Other</option>
+                                            </optgroup>
+                                            <optgroup label="BigCommerce vs">
+                                                <option>Shopify</option>
+                                                <option>Volusion</option>
+                                                <option>AShop</option>
+                                                <option>Other</option>
+                                            </optgroup>
+                                            <optgroup label="Volusion vs">
+                                                <option>Shopify</option>
+                                                <option>BigCommerce</option>
+                                                <option>AShop</option>
+                                                <option>Other</option>
+                                            </optgroup>
+                                            <optgroup label="AShop vs">
+                                                <option>Shopify</option>
+                                                <option>Volusion</option>
+                                                <option>BigCommerce</option>
+                                                <option>Other</option>
+                                            </optgroup>  
+                                            <optgroup label="Other vs">
+                                                <option>Shopify</option>
+                                                <option>Volusion</option>
+                                                <option>BigCommerce</option>
+                                                <option>AShop</option>
+                                            </optgroup>
+                                            <optgroup label="Web Hosting...">
+                                                <option>Blue Host</option>
+                                                <option>GoDaddy</option>
+                                                <option>Hostgator</option>
+                                                <option>BigHost</option>
+                                                <option>Uber Host 9000 Here</option>
+                                            </optgroup>
+                                            <optgroup label="Word Press Themes...">
+                                                <option>Theme 1</option>
+                                                <option>Theme 2</option>
+                                                <option>Theme 3</option>
+                                                <option>Theme 4</option>
+                                                <option>Theme 5</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="nav-collapse">
+                            </fieldset>
+                        </form>
+                    </div>
                     <ul class="nav pull-left">
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-home icon-white"></i></a>
@@ -230,6 +251,44 @@
         </div>
     </div>
 
+    <div class="container">
+
+        <h1>Bootstrap starter template</h1>
+        <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a href="#home" data-toggle="tab">Shopify</a></li>
+          <li><a href="#profile" data-toggle="tab">Menu</a></li>
+          <li><a href="#messages" data-toggle="tab">BigCommerce</a></li>
+        </ul>
+         
+
+        <ul class="nav nav-pills" id="myTab">
+          <li class="active"><a href="#home" data-toggle="tab">Shopify</a></li>
+          <li><a href="#profile" data-toggle="tab">Menu</a></li>
+          <li><a href="#messages" data-toggle="tab">BigCommerce</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">...Shopify Tab</div>
+          <div class="tab-pane" id="profile">...Menu Tab</div>
+          <div class="tab-pane" id="messages">...BigCommerce Tab</div>
+        </div>
+
+
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="intro">...Into Tab</div>
+          <div class="tab-pane" id="this">...Shopify Tab</div>
+          <div class="tab-pane" id="that">...BigCommerce Tab</div>
+        </div>
+
+    </div>
+
+
+ 
+
+
 
 
     <!-- JavaScript in BODY:
@@ -256,5 +315,10 @@
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+
+    <!-- LiveReload:
+       * http://feedback.livereload.com/knowledgebase/articles/86180-how-do-i-add-the-script-tag-manually-
+    ============================================================================= -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
